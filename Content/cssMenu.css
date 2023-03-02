@@ -1,0 +1,1462 @@
+﻿
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+}
+
+#navWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80
+}
+
+    #navWrapper, #navWrapper.is-hidden {
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out
+    }
+
+        #navWrapper.is-hidden {
+            -webkit-transform: translateY(-8rem);
+            transform: translateY(-8rem)
+        }
+
+        #navWrapper.is-visible {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out
+        }
+
+nav#RentalikaNavbar {
+    width: 99.89vw;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-basis: auto;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0rem 0rem;
+    min-height: 10px;
+    max-height: 50px;
+}
+
+    nav#RentalikaNavbar ul.marketplace-links li.active {
+        background-color: transparent;
+    }
+
+    nav#RentalikaNavbar .mainnavbar-right ul li.active {
+        background-color: transparent
+    }
+
+img.RentalIka-logoLetras {
+    padding-top: 0em;
+    width: 100%;
+    height: auto;
+}
+
+.mainnavbar-left {
+    background-image: url('../images/BackGround_Menu.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*border: 1px solid red;*/
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 100%;
+}
+
+
+    .mainnavbar-left, .mainnavbar-left .flexrentalika-logo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-direction: normal
+    }
+
+        .mainnavbar-left .flexrentalika-logo {
+            text-align: center;
+            max-width: 8.5rem;
+            -webkit-box-orient: vertical;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .mainnavbar-left img.menu {
+            width: 100vw;
+            background-color: #ffffff;
+        }
+
+        .mainnavbar-left img.bandhor {
+            position: absolute;
+            top: -0.7em;
+            left: 15em;
+            width: 100vw;
+            height: 0.5em;
+            background-color: blueviolet;
+        }
+
+        /*EEMH*/
+
+        .mainnavbar-left .RentalIka-logoLetras img {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border-radius: 1px;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+            border-color: blue;
+            border-width: 1px;
+            border-style: solid;
+        }
+        /*eemh*/
+        .mainnavbar-left div {
+        }
+
+        .mainnavbar-left ul {
+            display: none;
+            list-style: none;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            border-left: 1px solid Transparent;
+        }
+
+            .mainnavbar-left ul li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: inline-block;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin-right: 1.5rem
+            }
+
+                .mainnavbar-left ul li img {
+                    display: none
+                }
+
+                .mainnavbar-left ul li a {
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    -webkit-box-pack: start;
+                    -ms-flex-pack: start;
+                    justify-content: flex-start;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-transition: all .1s;
+                    transition: all .1s
+                }
+
+                    .mainnavbar-left ul li a:focus, .mainnavbar-left ul li a:hover {
+                        color: #2ea9d7;
+                        -webkit-transition: all .1s;
+                        transition: all .1s
+                    }
+
+#mobileAccountMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin: 0 1rem;
+    border-radius: 50%;
+    background-color: #7cd7ab;
+    cursor: pointer;
+    position: absolute;
+    right: 6rem;
+    -webkit-transform: translate(-5%,-50%);
+    transform: translate(-5%,-50%);
+    z-index: 2;
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+    z-index: 15
+}
+
+#mobileAccountNav {
+    display: none;
+    position: absolute;
+    top: 7.9rem;
+    left: 0;
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff
+}
+
+    #mobileAccountNav.open {
+        display: block;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        pointer-events: all
+    }
+
+    #mobileAccountNav .close-button {
+        margin: 1rem 0 2rem auto;
+        width: 21px;
+        height: 21px;
+        cursor: pointer
+    }
+
+        #mobileAccountNav .close-button:active, #mobileAccountNav .close-button:hover {
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2)
+        }
+
+    #mobileAccountNav .separator {
+        margin: 3rem 0;
+        border-bottom: 1px solid #e5e5e5
+    }
+
+    #mobileAccountNav .section {
+        padding: 1rem 3rem;
+        font-size: 1.5rem
+    }
+
+        #mobileAccountNav .section:nth-child(2) {
+            margin-bottom: 3rem
+        }
+
+        #mobileAccountNav .section ul {
+            list-style: none;
+            padding: 0
+        }
+
+            #mobileAccountNav .section ul li {
+                font-weight: 500;
+                margin: 0 0 1.5rem;
+                color: #181b1c
+            }
+
+                #mobileAccountNav .section ul li i, #mobileAccountNav .section ul li svg {
+                    margin: 0 1rem 0 0
+                }
+
+                #mobileAccountNav .section ul li a, #mobileAccountNav .section ul li svg {
+                    color: #181b1c
+                }
+
+                #mobileAccountNav .section ul li.sidebar-item-active a, #mobileAccountNav .section ul li.sidebar-item-active a path, #mobileAccountNav .section ul li.sidebar-item-active a svg {
+                    color: #2ea9d7;
+                    fill: #2ea9d7;
+                    stroke: #2ea9d7
+                }
+
+.login-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-flex: 0.3;
+    -ms-flex: 0.3;
+    flex: 0.3;
+    text-align: center
+}
+
+    .login-button .button {
+        font-family: Poppins,sans-serif;
+        background-color: transparent;
+        border: 2px solid #000;
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 500;
+        border-radius: 4px;
+        padding: .5em 1em;
+        margin: 0;
+        display: block;
+        -webkit-transition: all .1s ease;
+        transition: all .1s ease;
+        position: relative;
+        min-width: 11rem
+    }
+
+        .login-button .button:focus, .login-button .button:hover {
+            background-color: #f2f2f2;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            outline: 0;
+            color: #000
+        }
+
+        .login-button .button:active {
+            background-color: #fff;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            border: 2px solid #000;
+            outline: 0;
+            color: #000
+        }
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 2.5rem;
+    -webkit-transform: translate(-5%,-50%);
+    transform: translate(-5%,-50%);
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+    right: 0.5em;
+    z-index: 15
+}
+
+    .hamburger div {
+        width: 24px;
+        height: 3px;
+        background: #000;
+        margin: 4px;
+        border-radius: 1px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease
+    }
+
+.toggle .line1 {
+    -webkit-transform: rotate(-45deg) translate(-4px,5px);
+    transform: rotate(-45deg) translate(-4px,5px)
+}
+
+.toggle .line2 {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    width: 0;
+    opacity: 0
+}
+
+.toggle .line3 {
+    -webkit-transform: rotate(45deg) translate(-4px,-6px);
+    transform: rotate(45deg) translate(-4px,-6px)
+}
+
+#subNav {
+    height: 5rem;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 10;
+    padding: 0 1.25rem;
+    z-index: 5;
+    border-bottom: 1px solid #e5e5e5
+}
+
+    #subNav, #subNav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+        #subNav ul {
+            list-style: none;
+            height: 100%;
+            width: 100%;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+            #subNav ul, #subNav ul li {
+                margin: 0;
+                padding: 0
+            }
+
+                #subNav ul li.active {
+                    background-color: transparent
+                }
+
+                    #subNav ul li.active a {
+                        color: #2ea9d7
+                    }
+
+                #subNav ul li a {
+                    font-weight: 500;
+                    color: #000;
+                    font-size: 1.5rem;
+                    padding: 0 1.7rem
+                }
+
+                    #subNav ul li a:active, #subNav ul li a:focus, #subNav ul li a:hover {
+                        color: #2ea9d7
+                    }
+
+                #subNav ul li:first-child {
+                    border-right: 1px solid rgba(0,0,0,.1)
+                }
+
+/*eee*/
+
+.nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    width: 40vw;
+    padding: 1.4em;
+    margin: 0;
+    /* -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;*/
+    justify-content: space-evenly;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    position: fixed;
+    background: #ebd9ff;
+    height: calc(100vh - 60rem);
+    top: 9.5rem;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    pointer-events: none;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    z-index: 9
+}
+
+    .nav-links li {
+        position: relative;
+        opacity: 0;
+        width: 100%
+    }
+
+        .nav-links li a {
+            font-family: 'Montserrat-Regular';
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin: 0 .7vw;
+            color: #6424b8;
+            display: block;
+            -webkit-transition: all .1s;
+            transition: all .1s
+        }
+
+            .nav-links li a:focus, .nav-links li a:hover {
+                color: #2ea9d7;
+                -webkit-transition: all .1s;
+                transition: all .1s
+            }
+
+        .nav-links li.second-tier-link a {
+            font-weight: 400;
+            font-size: 1.6rem
+        }
+
+        .nav-links li.spacer {
+            display: block;
+            height: .4rem
+        }
+
+    .nav-links.open {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        pointer-events: all
+    }
+
+        .nav-links.open li.fade {
+            opacity: 1;
+            -webkit-transition: all .15s;
+            transition: all .15s;
+            -webkit-transition-delay: .15s;
+            transition-delay: .15s
+        }
+
+
+@media screen and (min-width: 280px) {
+    /*Ok*/
+    #navWrapper {
+        top: -39px;
+    }
+
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        /*background-size: cover;*/
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 40%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        left: 0.5em;
+        top: 4em;
+        height: 2em;
+    }
+
+    .oMenu {
+        display: none
+    }
+
+    #subNav {
+        height: 5.5rem;
+        padding: 0 1.25rem 0 17rem;
+    }
+
+    .nav-links {
+        top: 3.7rem;
+        width: 70%;
+        height: calc(100vh - 28rem);
+    }
+
+        .nav-links li a {
+            font-size: 1.7rem;
+        }
+
+    .hamburger {
+        display: block;
+        top: 6em;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .mainnavbar-left .RentalIka-logo img {
+        width: 180px;
+        height: 56px;
+        margin: 1px;
+        border-radius: 1px;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        font-size: 50%
+    }
+}
+
+@media screen and (min-width: 320px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        left: 1em;
+        height: 5em;
+    }
+
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: .7em;
+    }
+
+    .oMenu {
+        display: none
+    }
+
+    #subNav {
+        height: 5.5rem;
+        padding: 0 1.25rem 0 17rem;
+    }
+
+    .nav-links {
+        top: 3.7rem;
+        width: 70%;
+        height: calc(100vh - 28rem);
+    }
+
+        .nav-links li a {
+            font-size: 1.5rem;
+        }
+
+    .hamburger {
+        top: 5em;
+        /*right: -26.5rem;*/
+    }
+}
+
+@media screen and (min-width: 360px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 40%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 4em;
+        left: 1em;
+        height: 2em;
+    }
+
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: .7em;
+    }
+
+    .oMenu {
+        display: none
+    }
+
+    #subNav {
+        height: 5.5rem;
+        padding: 0 1.25rem 0 17rem;
+    }
+
+    .nav-links {
+        top: 3.7rem;
+        width: 75%;
+        height: calc(100vh - 25rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.5rem;
+        }
+
+    .hamburger {
+        display: block;
+        top: 8em;
+        /*right: 93.5em;*/
+    }
+}
+
+@media screen and (min-width: 375px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 40%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        left: 0em;
+        height: 2.8em;
+    }
+    /* .mainnavbar-left img.menu {
+            width: 30%;
+        }*/
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: 1em;
+    }
+
+    #subNav {
+        height: 5.2rem;
+        /*padding: 0 1.25rem 0 17rem*/
+    }
+
+
+    .nav-links {
+        top: 3.7rem;
+        width: 75%;
+        height: calc(100vh - 25rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.5rem;
+        }
+
+    .hamburger {
+        display: block;
+        top: 6em;
+        right: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 390px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 40%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 4em;
+        left: 0em;
+        height: 2.5em;
+    }
+
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: 1em;
+    }
+
+    #subNav {
+        height: 5.2rem;
+        /*padding: 0 1.25rem 0 17rem*/
+    }
+
+
+    .nav-links {
+        top: 3.7rem;
+        width: 75%;
+        height: calc(100vh - 25rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.5rem;
+        }
+
+    .hamburger {
+        display: block;
+        top: 8em;
+        /*right: 89.5rem;*/
+    }
+}
+
+@media screen and (min-width: 393px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 40%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 4em;
+        left: 0em;
+        height: 2.5em;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: 1em;
+    }
+
+    #subNav {
+        height: 5.2rem;
+        /*padding: 0 1.25rem 0 17rem*/
+    }
+
+
+    .nav-links {
+        top: 3.7rem;
+        width: 75%;
+        height: calc(100vh - 25rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.5rem;
+        }
+
+    .hamburger {
+        display: block;
+        top: 8em;
+        /*right: 90.5rem;*/
+    }
+}
+
+@media screen and (min-width: 412px) {
+    /*ok*/
+    #navWrapper {
+        top: -45px;
+    }
+
+    nav#RentalikaNavbar {
+        padding: 2rem 0rem;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 45%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 2.5em;
+        left: 0.5em;
+        height: 3em;
+    }
+
+    .oMenu {
+        display: none
+    }
+
+    #subNav {
+        height: 5.5rem;
+        padding: 0 1.25rem 0 17rem;
+    }
+
+    .nav-links {
+        top: 3.7rem;
+        width: 75%;
+        height: calc(100vh - 25rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.5rem;
+        }
+
+    .hamburger {
+        top: 8em;
+        /*right: 87.5em;*/
+    }
+}
+
+@media screen and (min-width: 414px) {
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 40%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 2.5em;
+        left: 0.5em;
+        height: 2em;
+    }
+
+    .oMenu {
+        display: none
+    }
+
+    #subNav {
+        height: 5.5rem;
+        padding: 0 1.25rem 0 17rem;
+    }
+
+    .nav-links {
+        top: 3.7rem;
+        width: 75%;
+        height: calc(100vh - 25rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.5rem;
+        }
+
+    .hamburger {
+        top: 8em;
+        /*right: 0.5rem;*/
+    }
+}
+
+@media screen and (min-width: 540px) {
+    /*ok*/
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 50%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 4.5em;
+        left: 0em;
+        height: 4em;
+    }
+
+        .mainnavbar-left ul {
+            position: relative;
+            left: 0em;
+            height: 5em;
+            top: 2.5em;
+        }
+
+            .mainnavbar-left ul li {
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+                .mainnavbar-left ul li a {
+                    font-size: 0.9rem;
+                }
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: .7em;
+    }
+
+    .oMenu {
+        display: block;
+    }
+
+    .nav-links {
+        top: 4.5rem;
+        width: 75%;
+        height: calc(100vh - 25rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.5rem;
+        }
+
+
+    #subNav {
+        height: 5.5rem;
+    }
+
+    .hamburger {
+        /*right: 76em;*/
+        top: 9em;
+    }
+
+    /*.mobile-only {
+        display: none
+    }*/
+}
+
+@media screen and (min-width: 768px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 1em;
+        width: 63%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        left: 0em;
+        top: 4em;
+        height: 5.8em;
+    }
+
+        .mainnavbar-left ul {
+            display: block;
+            left: -9.5em;
+            top: -3.5em;
+        }
+
+            .mainnavbar-left ul li {
+                display: inline-block;
+                margin-right: 1rem;
+                font-size: 1.7rem
+            }
+
+
+    .nav-links {
+        top: 7.2rem;
+        height: calc(100vh - 70rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.2rem;
+        }
+
+    #mobileAccountMenu {
+        display: none
+    }
+
+    .hamburger {
+        /*right: 5.5rem;*/
+    }
+
+    .mobile-only {
+        display: none
+    }
+}
+
+@media screen and (min-width: 780px) {
+    nav#RentalikaNavbar {
+        background-size: cover;
+    }
+
+    #navWrapper.is-hidden {
+        -webkit-transform: translateY(-10rem);
+        transform: translateY(-10rem)
+    }
+
+    .mainnavbar-left ul {
+        margin: 0 0 0 1rem;
+        padding: 0 0 0 8rem;
+        top: 4em;
+    }
+
+    .mobile-only {
+        display: none
+    }
+
+
+    .nav-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: auto;
+        padding: 0;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        background: transparent;
+        height: auto;
+        top: auto;
+        left: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+        pointer-events: visible;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1)
+    }
+
+        .nav-links li {
+            opacity: 1;
+            width: auto;
+            margin: 0 .5rem
+        }
+
+            .nav-links li a {
+                font-size: 1.6rem;
+                font-weight: 400
+            }
+
+            .nav-links li.login-button {
+                margin-left: .8rem
+            }
+
+                .nav-links li.login-button button {
+                    margin: 0
+                }
+
+    #subNav {
+        top: 7.5rem
+    }
+
+    #mobileAccountMenu {
+        display: none
+    }
+}
+
+@media screen and (min-width: 820px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 1em;
+        width: 54%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        left: 0em;
+        top: 4.5em;
+        height: 5em;
+    }
+
+
+        .mainnavbar-left ul {
+            left: -16.5em;
+            top: -4em;
+        }
+
+            .mainnavbar-left ul li {
+                display: inline-block;
+                margin-right: 1rem;
+                font-size: 1.7rem
+            }
+
+
+    .nav-links {
+        top: 7.2rem;
+        height: calc(100vh - 70rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.2rem;
+        }
+
+    #mobileAccountMenu {
+        display: none
+    }
+
+    .hamburger {
+        /*right: 5.5rem;*/
+    }
+
+    .mobile-only {
+        display: none
+    }
+}
+
+@media screen and (min-width: 912px) {
+    nav#RentalikaNavbar {
+        padding: 0rem 0rem;
+        background-size: contain;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 1em;
+        width: 70%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 4.5em;
+        left: 0.5em;
+        height: 6em;
+    }
+        /*  .mainnavbar-left img.menu {
+            width: 71%;
+        }*/
+
+        .mainnavbar-left ul {
+            display: block;
+            position: fixed;
+            left: 16.5em;
+            top: 3.8em;
+        }
+
+            .mainnavbar-left ul li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+                .mainnavbar-left ul li a {
+                    font-size: 1.4rem;
+                }
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: .7em;
+    }
+
+    #subNav {
+        height: 5.5rem;
+        /*padding: 0 1.25rem 0 17rem*/
+    }
+
+    .mobile-only {
+        display: none
+    }
+
+    .nav-links {
+        height: calc(100vh - 130rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.2rem;
+        }
+    /*#hamburgerMenu {
+        display: block;
+    }
+    .hamburger {
+        right: -78.5rem;
+        top: 10em;
+    }  */
+}
+
+@media screen and (min-width: 992px) {
+    nav#RentalikaNavbar {
+        background-size: cover;
+    }
+
+    .mainnavbar-left .RentalIka-logo {
+        max-width: 10.5rem
+    }
+
+    .mainnavbar-left ul {
+        margin: 0 0 0 1rem;
+        padding: 0 0 0 8rem;
+        top: 4em;
+    }
+
+        .mainnavbar-left ul li {
+            display: inline-block;
+            margin-right: 1rem
+        }
+
+    #subNav {
+        height: 5.5rem;
+        padding: 0 1.25rem 0 17rem
+    }
+
+    .mobile-only {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav#RentalikaNavbar {
+        padding: 2rem 0rem;
+        background-size: cover;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 1em;
+        width: 80%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        left: 0.5em;
+        top: 3.5em;
+        height: 7.5em;
+    }
+
+        .mainnavbar-left ul {
+            display: block;
+            position: fixed;
+            left: 19em;
+            top: 5.5em;
+        }
+
+            .mainnavbar-left ul li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+                .mainnavbar-left ul li a {
+                    font-size: 1.5rem;
+                }
+
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: .7em;
+    }
+
+
+
+    #subNav {
+        height: 5.5rem;
+        /*padding: 0 1.25rem 0 17rem*/
+    }
+
+    .mobile-only {
+        display: none
+    }
+
+    .nav-links {
+        height: calc(100vh - 130rem);
+    }
+
+        .nav-links li a {
+            font-size: 2.2rem;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    nav#RentalikaNavbar {
+        padding: 3rem 0rem;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 0em;
+        width: 100%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: 3.5em;
+        left: 0.5em;
+        height: 9.5em;
+    }
+
+        .mainnavbar-left ul {
+            display: block;
+            position: fixed;
+            left: 24em;
+            top: 7em;
+        }
+
+            .mainnavbar-left ul li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+                .mainnavbar-left ul li a {
+                    font-size: 2rem;
+                }
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: .7em;
+    }
+
+    #subNav {
+        height: 5.5rem;
+        /*padding: 0 1.25rem 0 17rem*/
+    }
+
+    .mobile-only {
+        display: none
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    nav#RentalikaNavbar {
+        padding: 9rem 0rem;
+        background-size: cover;
+    }
+
+    img.RentalIka-logoLetras {
+        padding-top: 4em;
+        width: 120%;
+    }
+
+    .mainnavbar-left {
+        position: relative;
+        top: -0.9em;
+        left: 0.5em;
+        height: 14em;
+    }
+
+        .mainnavbar-left ul {
+            display: block;
+            left: 38em;
+            top: 9em;
+        }
+
+            .mainnavbar-left ul li {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: inline-block;
+                margin-right: 1em;
+            }
+
+                .mainnavbar-left ul li a {
+                    font-size: 3rem;
+                }
+
+    .navbar-inverse .navbar-nav > li > a {
+        cursor: pointer;
+        color: midnightblue;
+        font-family: 'montserrat-Regular';
+        font-size: 2rem;
+    }
+
+    #subNav {
+        height: 5.5rem;
+        /*padding: 0 1.25rem 0 17rem*/
+    }
+
+    .mobile-only {
+        display: none
+    }
+}
